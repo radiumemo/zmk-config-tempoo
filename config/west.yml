@@ -1,4 +1,19 @@
 manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: curbol
+      url-base: https://github.com/curbol
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: temporal-zmk
+      remote: curbol
+      revision: main
+  self:
+    path: configmanifest:
   defaults:
     revision: v0.3
   remotes:
